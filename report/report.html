@@ -36,20 +36,20 @@ table       { font-size: 100%; }
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">接口测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 测试组</p>
-<p class='attribute'><strong>开始时间 : </strong> 2018-12-09 14:33:39</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.725533</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 10，通过 10，通过率= 100.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2018-12-09 17:29:10</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.093230</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 12，通过 11，错误 1，通过率= 91.67%</p>
 
 <p class='description'>测试报告</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(4)'>概要{ 100.00% }</a>
-<a class="btn btn-success" href='javascript:showCase(0)'>通过{ 10 }</a>
+<a class="btn btn-primary" href='javascript:showCase(4)'>概要{ 91.67% }</a>
+<a class="btn btn-success" href='javascript:showCase(0)'>通过{ 11 }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-warning" href='javascript:showCase(2)'>错误{ 0 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 10 }</a>
+<a class="btn btn-warning" href='javascript:showCase(2)'>错误{ 1 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 12 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -150,27 +150,65 @@ table       { font-size: 100%; }
     <td colspan='5' align='center'><button id='btn_pt4_2' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt4_2'>通过</button></td>
 </tr>
 
+<tr class='warning'>
+    <td>test_youka_006xiaofei.Testxiaofei</td>
+    <td class="text-center">2</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',2)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='et5_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_001xiaofeichenggong: 消费成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起output信息 -Findyou
+    <button id='btn_et5_1' type="button"  class="btn-xs collapsed" data-toggle="collapse" data-target='#div_et5_1'>错误</button>
+    <div id='div_et5_1' class="collapse">  -->
+    <!-- 默认展开output信息 -Findyou -->
+    <button id='btn_et5_1' type="button"  class="btn-xs" data-toggle="collapse" data-target='#div_et5_1'>错误</button>
+    <div id='div_et5_1' class="collapse in">
+    <pre>
+    
+et5_1: Traceback (most recent call last):
+  File "D:\PycharmProjects\jiayouka\testcase\test_youka_006xiaofei.py", line 24, in test_001xiaofeichenggong
+    self.assertFalse(cardNumber(6666666667))
+  File "D:\PycharmProjects\jiayouka\lib\db.py", line 42, in cardNumber
+    if r[4] == '0':   #余额等于0
+IndexError: tuple index out of range
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt5_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_002xiaofeishibai: 余额不足</div></td>
+    <td colspan='5' align='center'><button id='btn_pt5_2' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt5_2'>通过</button></td>
+</tr>
+
 <tr class='success'>
     <td>test_youka_zzz.DB_qingli</td>
     <td class="text-center">1</td>
     <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c5',1)" class="detail" id='c5'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c6',1)" class="detail" id='c6'>详细</a></td>
 </tr>
 
-<tr id='pt5_1' class='hiddenRow'>
+<tr id='pt6_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_youka_zzz: 数据清理</div></td>
-    <td colspan='5' align='center'><button id='btn_pt5_1' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt5_1'>通过</button></td>
+    <td colspan='5' align='center'><button id='btn_pt6_1' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt6_1'>通过</button></td>
 </tr>
 
 <tr id='total_row' class="text-center info">
     <td>总计</td>
-    <td>10</td>
-    <td>10</td>
+    <td>12</td>
+    <td>11</td>
     <td>0</td>
-    <td>0</td>
-    <td>通过率：100.00%</td>
+    <td>1</td>
+    <td>通过率：91.67%</td>
 </tr>
 </table>
 

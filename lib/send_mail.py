@@ -19,7 +19,7 @@ def send_mail():
 
     att = MIMEText(att_file, 'base64','utf_8')
     att["Content-Type"] = 'application/octet-stream' # 声明附件的内容格式 MIME数据流格式
-    att["Content-Disposition"] = "attachment;filename='report.html'" # 附件描述信息 filename是附件显示的文件名
+    att["Content-Disposition"] = "attachment;filename=report.html" # 附件描述信息 filename是附件显示的文件名
     msg.attach(att)
 
     # 连接SMTP服务器并发送
