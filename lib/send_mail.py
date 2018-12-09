@@ -28,3 +28,5 @@ def send_mail():
     smtp.sendmail(config.sender,
                   config.receiver,
                   msg.as_string())
+
+

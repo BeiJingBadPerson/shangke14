@@ -822,3 +822,69 @@
 2018-12-09 13:35:58 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "GET /gasStation/process?dataSourceId=bHRz&userId=29&cardNumber=6666666664&methodId=02A HTTP/1.1" 200 None
 2018-12-09 13:35:58 DEBUG db_change [db.py-27] DELETE FROM cardinfo WHERE cardNumber = '6666666667'
 2018-12-09 13:35:58 INFO <module> [all_run.py-16] 测试结束==================================================
+2018-12-09 14:33:39 INFO <module> [all_run.py-13] 测试开始==================================================
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-5] 执行用例: test_001tianjiakachenggong
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-6] 接口地址: http://115.28.108.130:8080/gasStation/process
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-7] 请求数据: http://115.28.108.130:8080/gasStation/process
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-8] 期望结果: {
+ "dataSourceId": "bHRz", 
+ "methodId": "00A",
+ "CardInfo": {
+     "cardNumber": "6666666667"
+  }
+}
+
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-9] 实际结果: {"code":200,"msg":"添加卡成功","success":false}
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-5] 执行用例: test_002bangdingchenggong
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-6] 接口地址: http://115.28.108.130:8080/gasStation/process
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-7] 请求数据: http://115.28.108.130:8080/gasStation/process
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-8] 期望结果: {
+ "dataSourceId": "bHRz", 
+ "methodId": "01A",
+ "CardUser": {
+  "userName": "jiekou",
+  "idType": "1",
+  "idNumber": "987654321"
+ },
+ "CardInfo": {
+  "cardNumber": "6666666667"
+ }
+}
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-9] 实际结果: {"code":5010,"msg":"绑定成功","result":{"UserId":29},"success":true}
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-5] 执行用例: test_003chongfubangka
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-6] 接口地址: http://115.28.108.130:8080/gasStation/process
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-7] 请求数据: http://115.28.108.130:8080/gasStation/process
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-8] 期望结果: {
+ "dataSourceId": "bHRz", 
+ "methodId": "01A",
+ "CardUser": {
+  "userName": "jiekou",
+  "idType": "1",
+  "idNumber": "987654321"
+ },
+ "CardInfo": {
+  "cardNumber": "6666666667"
+ }
+}
+2018-12-09 14:33:39 INFO log_case_info [case_log.py-9] 实际结果: {"code":5041,"msg":"卡已经被绑定,无法绑定","success":false}
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-09 14:33:39 DEBUG db_change [db.py-27] DELETE FROM cardinfo WHERE cardNumber = '7777777'
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "GET /gasStation/process?dataSourceId=bHRz&userId=29&cardNumber=6666666667&methodId=02A HTTP/1.1" 200 None
+2018-12-09 14:33:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-09 14:33:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "GET /gasStation/process?dataSourceId=bHRz&userId=29&cardNumber=6666666664&methodId=02A HTTP/1.1" 200 None
+2018-12-09 14:33:39 DEBUG db_change [db.py-27] DELETE FROM cardinfo WHERE cardNumber = '6666666667'
+2018-12-09 14:33:39 INFO <module> [all_run.py-16] 测试结束==================================================
