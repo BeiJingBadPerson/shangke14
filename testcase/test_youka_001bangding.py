@@ -1,7 +1,7 @@
 import unittest,requests,json
 from lib.read_excel import get_sheet,get_case
 from config.config import data_path
-from lib.case_log import log_case_info
+from lib.case_log import case_log
 
 
 class TestBangding(unittest.TestCase):
@@ -19,7 +19,7 @@ class TestBangding(unittest.TestCase):
         data = json.loads(case_data[4])
         excepted_res = json.loads(case_data[5])
         res = requests.post(url=url, json=data)
-        log_case_info("test_001tianjiakachenggong",url,case_data[3],case_data[4],res.text)
+        case_log(case_data[1],url,case_data[4],case_data[5],res.text)
         self.assertEqual(res.json(), excepted_res)
 
 
@@ -30,7 +30,7 @@ class TestBangding(unittest.TestCase):
         data = json.loads(case_data[4])
         excepted_res = json.loads(case_data[5])
         res = requests.post(url=url, json=data)
-        log_case_info("test_002bangdingchenggong", url, case_data[3], case_data[4], res.text)
+        case_log(case_data[1],url,case_data[4],case_data[5],res.text)
         self.assertEqual(res.json(), excepted_res)
 
     def test_003chongfubangka(self):
@@ -40,7 +40,7 @@ class TestBangding(unittest.TestCase):
         data = json.loads(case_data[4])
         excepted_res = json.loads(case_data[5])
         res = requests.post(url=url, json=data)
-        log_case_info("test_003chongfubangka", url, case_data[3], case_data[4], res.text)
+        case_log(case_data[1],url,case_data[4],case_data[5],res.text)
         self.assertEqual(res.json(), excepted_res)
 
 

@@ -1,4 +1,4 @@
-import pymysql
+import pymysql,logging
 from config import config
 
 
@@ -18,7 +18,6 @@ def db_query(sql):   # 查询
     cur.execute(sql)
     r = cur.fetchall()
     config.logging.debug(r)
-    #print(r)
     cur.close()
     conn.close()
     return r

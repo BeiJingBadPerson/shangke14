@@ -1,9 +1,9 @@
-from config import config
+from config.config import logging
 
-def log_case_info(case_name, url, data, excepted_res, actual_res):
-    #config.logging.info("-"*100)
-    config.logging.info("执行用例: {}".format(case_name))
-    config.logging.info("接口地址: {}".format(url))
-    config.logging.info("请求数据: {}".format(data))
-    config.logging.info("期望结果: {}".format(excepted_res))
-    config.logging.info("实际结果: {}".format(actual_res))
+def case_log(case_name, url, data, excepted_res, actual_res):
+    logging.info("-"*100)
+    logging.info("执行用例: {}".format(case_name))
+    logging.info("接口地址: {}".format(url))
+    logging.info("请求数据: {}".format(data))
+    logging.info("期望结果: {}".format(excepted_res))
+    logging.info("实际结果: {}".format(actual_res))

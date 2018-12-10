@@ -1,7 +1,7 @@
-import unittest
-from config.config import report_path,logging
+import unittest,logging
+from config.config import report_path
 from lib.HTMLTestRunner_PY2_PY3 import HTMLTestReportCN
-from lib.send_mail import send_mail
+from lib.send_mail import send_mail_report
 
 
 # 发现并收集用例得到一个测试集合
@@ -12,6 +12,9 @@ if __name__=="__main__":
     # unittest.TextTestRunner(verbosity=1).run(all)
     logging.info("测试开始" + "=" * 50)
     with open(report_path,"wb") as f:
-        HTMLTestReportCN(stream=f,title="接口测试报告",description="测试报告",tester="测试组").run(all)
+        HTMLTestReportCN(stream=f,
+                         title="接口测试报告",
+                         description="邮件内容",
+                         tester="测试组").run(all)
     logging.info("测试结束" + "=" * 50)
-    send_mail()
+    send_mail_report("jiekou")
