@@ -36,8 +36,8 @@ table       { font-size: 100%; }
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">接口测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 测试组</p>
-<p class='attribute'><strong>开始时间 : </strong> 2018-12-10 11:35:42</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.152093</p>
+<p class='attribute'><strong>开始时间 : </strong> 2018-12-10 11:45:42</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.082837</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 12，通过 11，错误 1，通过率= 91.67%</p>
 
 <p class='description'>邮件内容</p>
@@ -131,46 +131,27 @@ table       { font-size: 100%; }
     <td colspan='5' align='center'><button id='btn_pt3_2' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt3_2'>通过</button></td>
 </tr>
 
-<tr class='success'>
-    <td>test_youka_005chaxun.TestChaxun</td>
-    <td class="text-center">2</td>
-    <td class="text-center">2</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c4',2)" class="detail" id='c4'>详细</a></td>
-</tr>
-
-<tr id='pt4_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_chaxunchenggong: 查询成功</div></td>
-    <td colspan='5' align='center'><button id='btn_pt4_1' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt4_1'>通过</button></td>
-</tr>
-
-<tr id='pt4_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_chaxunshibai: 卡号不存在</div></td>
-    <td colspan='5' align='center'><button id='btn_pt4_2' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt4_2'>通过</button></td>
-</tr>
-
 <tr class='warning'>
     <td>test_youka_006xiaofei.Testxiaofei</td>
     <td class="text-center">2</td>
     <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">1</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c5',2)" class="detail" id='c5'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',2)" class="detail" id='c4'>详细</a></td>
 </tr>
 
-<tr id='et5_1' class='none'>
+<tr id='et4_1' class='none'>
     <td class='errorCase'><div class='testcase'>test_001xiaofeichenggong: 消费成功</div></td>
     <td colspan='5' align='center'>
     <!--默认收起output信息 -Findyou
-    <button id='btn_et5_1' type="button"  class="btn-xs collapsed" data-toggle="collapse" data-target='#div_et5_1'>错误</button>
-    <div id='div_et5_1' class="collapse">  -->
+    <button id='btn_et4_1' type="button"  class="btn-xs collapsed" data-toggle="collapse" data-target='#div_et4_1'>错误</button>
+    <div id='div_et4_1' class="collapse">  -->
     <!-- 默认展开output信息 -Findyou -->
-    <button id='btn_et5_1' type="button"  class="btn-xs" data-toggle="collapse" data-target='#div_et5_1'>错误</button>
-    <div id='div_et5_1' class="collapse in">
+    <button id='btn_et4_1' type="button"  class="btn-xs" data-toggle="collapse" data-target='#div_et4_1'>错误</button>
+    <div id='div_et4_1' class="collapse in">
     <pre>
     
-et5_1: Traceback (most recent call last):
+et4_1: Traceback (most recent call last):
   File "D:\PycharmProjects\jiayouka\testcase\test_youka_006xiaofei.py", line 24, in test_001xiaofeichenggong
     self.assertFalse(cardNumber(6666666667))
   File "D:\PycharmProjects\jiayouka\lib\db.py", line 41, in cardNumber
@@ -183,8 +164,27 @@ IndexError: tuple index out of range
     </td>
 </tr>
 
-<tr id='pt5_2' class='hiddenRow'>
+<tr id='pt4_2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_002xiaofeishibai: 余额不足</div></td>
+    <td colspan='5' align='center'><button id='btn_pt4_2' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt4_2'>通过</button></td>
+</tr>
+
+<tr class='success'>
+    <td>test_youka_chaxun.test_youka_005chaxun.TestChaxun</td>
+    <td class="text-center">2</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',2)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='pt5_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_chaxunchenggong: 查询成功</div></td>
+    <td colspan='5' align='center'><button id='btn_pt5_1' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt5_1'>通过</button></td>
+</tr>
+
+<tr id='pt5_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_chaxunshibai: 卡号不存在</div></td>
     <td colspan='5' align='center'><button id='btn_pt5_2' type="button"  class="btn-xs" disabled="disabled" data-toggle="collapse" data-target='#div_pt5_2'>通过</button></td>
 </tr>
 
