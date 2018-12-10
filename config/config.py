@@ -13,7 +13,7 @@ server = "smtp.qq.com"  # smtp服务器 smtp.qq.com
 sender = '378699049@qq.com'  # 发送方 378699049@qq.com
 emailusername = "378699049@qq.com"  # 登录邮箱的用户名
 emailpassword = "ajkxtszgxqaybijd"             # 登录邮箱的密码,请配置自己的 juhmbfvwzeuqcbbd
-receiver = "beijinglixun@gmail.com" #  接收方,多个收件人以逗号隔开"beijinglixun@gmail.com,yy@qq.com"
+receiver = "378699049@qq.com" #  接收方,多个收件人以逗号隔开"beijinglixun@gmail.com,yy@qq.com"
 
 # subject = '接口测试报告'
 # body = "jie口测试报告"
